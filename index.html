@@ -5,20 +5,15 @@
 <!--  ----------------------------------------------------------------------  -->
 
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
- function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-</script>
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 
-<form action="https://webto.stmfb.stm.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+<form action="https://webto.stmfa.stm.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<input type=hidden name='captcha_settings' value='{"keyname":"github","fallback":"true","orgId":"00DRM000000FJx8","ts":""}'>
-<input type=hidden name="orgid" value="00DRM000000FJx8">
-<input type=hidden name="retURL" value="https://yasyaG.github.io">
+<input type=hidden name="orgid" value="00DRM000000GQwA">
+<input type=hidden name="retURL" value="http://">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -39,7 +34,6 @@
 
 <input type="hidden"  id="external" name="external" value="1" /><br>
 
-<div class="g-recaptcha" data-sitekey="6LcPk9AZAAAAAFNzUQl1MrKDtUix6biElwyoRBXx"></div><br>
 <input type="submit" name="submit">
 
 </form>
